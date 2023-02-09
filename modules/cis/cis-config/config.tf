@@ -1,4 +1,5 @@
-
+# on this module, We should to changed it the put-retention-configuration manually  because there isn't any way to do this on terraform yet
+# See on this link: https://github.com/hashicorp/terraform-provider-aws/issues/13305
 module "aws_config" {
   source  = "trussworks/config/aws"
   version = "5.3.0"
@@ -18,7 +19,7 @@ module "aws_config" {
   check_cloud_trail_encryption                     = var.configs_check_cloud_trail_encryption                    
   check_cloudtrail_enabled                         = var.configs_check_cloudtrail_enabled                        
   check_cloud_trail_log_file_validation            = var.configs_check_cloud_trail_log_file_validation           
-  cloud_trail_cloud_watch_logs_enabled             = var.configs_cloud_trail_cloud_watch_logs_enabled           
+  cloud_trail_cloud_watch_logs_enabled             = var.configs_check_cloud_trail_cloud_watch_logs_enabled
   check_s3_bucket_level_public_access_prohibited   = var.configs_check_s3_bucket_level_public_access_prohibited  
   check_s3_bucket_ssl_requests_only                = var.configs_check_s3_bucket_ssl_requests_only               
   check_s3_bucket_server_side_encryption_enabled   = var.configs_check_s3_bucket_server_side_encryption_enabled  
