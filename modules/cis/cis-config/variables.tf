@@ -131,8 +131,3 @@ variable "configs_check_vpc_default_security_group_closed"  {
   type    = bool
   default = false
 }
-
-variable "configs_check_vpc_default_security_group_closed" {
-  type    = bool
-  default = false
-}
